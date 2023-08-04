@@ -1,0 +1,1036 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "activatePolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "cancelPolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_insuredToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_insurerToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_policyManagerContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_premiumAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_insuredAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_policyTermInSeconds",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_depegTermInSeconds",
+          "type": "uint256"
+        }
+      ],
+      "name": "createPolicy",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getPolicy",
+      "outputs": [
+        {
+          "internalType": "contract StablecoinInsurancePolicy",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "policyIsDepegged",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "policyId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "recordPolicyDepeg",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "activatePolicy(bytes32)": "da2ae73c",
+    "cancelPolicy(bytes32)": "a86146d0",
+    "createPolicy(address,address,address,uint256,uint256,uint256,uint256)": "e661e1f2",
+    "getPolicy(bytes32)": "a3f685f9",
+    "policyIsDepegged(bytes32)": "c67503e2",
+    "recordPolicyDepeg(bytes32)": "99f8a6cc"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"policyId\",\"type\":\"bytes32\"}],\"name\":\"activatePolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"policyId\",\"type\":\"bytes32\"}],\"name\":\"cancelPolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_insuredToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_insurerToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_policyManagerContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_premiumAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_insuredAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_policyTermInSeconds\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_depegTermInSeconds\",\"type\":\"uint256\"}],\"name\":\"createPolicy\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"policyId\",\"type\":\"bytes32\"}],\"name\":\"getPolicy\",\"outputs\":[{\"internalType\":\"contract StablecoinInsurancePolicy\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"policyId\",\"type\":\"bytes32\"}],\"name\":\"policyIsDepegged\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"policyId\",\"type\":\"bytes32\"}],\"name\":\"recordPolicyDepeg\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IStablecoinInsuranceManager.sol\":\"IStablecoinInsuranceManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/\"]},\"sources\":{\"lib/forge-std/src/Console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"src/IDataProvider.sol\":{\"keccak256\":\"0x65e437b0ac57ecb2d0a8de3f6d2e5a045763943de5f4eff9341e7298a73cbbfc\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://ab9e4359c5c9d63f472d01cb3d666e79e8e00f90300001bbdda04297d34dece9\",\"dweb:/ipfs/QmfDC5Jpwe7FVx9PFXEW3qHtSSjzxY5eZcaGG5jRpDBpNk\"]},\"src/IStablecoinInsuranceManager.sol\":{\"keccak256\":\"0x2bcc898caf3be04d4d626b5553be304cb8919c8fa400bc4e45f2c019b3ed403f\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://63dc8052cec7486e0c0137b4f642fb3db85174c35a6ad66f7a6c64b06e78287b\",\"dweb:/ipfs/QmPJCWLVsCZtHrUCFFDtAMX52q4HqRbWkpmQ1zESGj6iqL\"]},\"src/IStablecoinInsurancePolicy.sol\":{\"keccak256\":\"0xb18a53dadb5f54820e6f6e1aeb0f61ab53c984b858d0ed9764d99bd1ff69ad4c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c806e8d610876d67ce8c765be723a445de991d4fcc11292375b209a2c04fb09c\",\"dweb:/ipfs/QmfRvGoZeNS139p98mNiHVKcTTo8EWsPCUxFRkg543uhsV\"]},\"src/StablecoinInsurancePolicy.sol\":{\"keccak256\":\"0xa026a5cd61fa741b13b5e7c7da006b92fa31593fffd5ad0f3db7081b43073dbd\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://505fce006433f313453ea3ff849731f0ae9cef6977b9d471ffbfab5903ff1852\",\"dweb:/ipfs/QmRJxoUR2qbLiZwh5tBTGpGMfEf7qnBPBtT7GzVYSe8nt3\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "activatePolicy"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "cancelPolicy"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_insuredToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_insurerToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_policyManagerContract",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_premiumAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_insuredAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_policyTermInSeconds",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_depegTermInSeconds",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "createPolicy",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPolicy",
+          "outputs": [
+            {
+              "internalType": "contract StablecoinInsurancePolicy",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "policyIsDepegged",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "policyId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "recordPolicyDepeg"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        ":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        ":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/IStablecoinInsuranceManager.sol": "IStablecoinInsuranceManager"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/Console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+        "urls": [
+          "bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+          "dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+        ],
+        "license": "MIT"
+      },
+      "src/IDataProvider.sol": {
+        "keccak256": "0x65e437b0ac57ecb2d0a8de3f6d2e5a045763943de5f4eff9341e7298a73cbbfc",
+        "urls": [
+          "bzz-raw://ab9e4359c5c9d63f472d01cb3d666e79e8e00f90300001bbdda04297d34dece9",
+          "dweb:/ipfs/QmfDC5Jpwe7FVx9PFXEW3qHtSSjzxY5eZcaGG5jRpDBpNk"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/IStablecoinInsuranceManager.sol": {
+        "keccak256": "0x2bcc898caf3be04d4d626b5553be304cb8919c8fa400bc4e45f2c019b3ed403f",
+        "urls": [
+          "bzz-raw://63dc8052cec7486e0c0137b4f642fb3db85174c35a6ad66f7a6c64b06e78287b",
+          "dweb:/ipfs/QmPJCWLVsCZtHrUCFFDtAMX52q4HqRbWkpmQ1zESGj6iqL"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/IStablecoinInsurancePolicy.sol": {
+        "keccak256": "0xb18a53dadb5f54820e6f6e1aeb0f61ab53c984b858d0ed9764d99bd1ff69ad4c",
+        "urls": [
+          "bzz-raw://c806e8d610876d67ce8c765be723a445de991d4fcc11292375b209a2c04fb09c",
+          "dweb:/ipfs/QmfRvGoZeNS139p98mNiHVKcTTo8EWsPCUxFRkg543uhsV"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/StablecoinInsurancePolicy.sol": {
+        "keccak256": "0xa026a5cd61fa741b13b5e7c7da006b92fa31593fffd5ad0f3db7081b43073dbd",
+        "urls": [
+          "bzz-raw://505fce006433f313453ea3ff849731f0ae9cef6977b9d471ffbfab5903ff1852",
+          "dweb:/ipfs/QmRJxoUR2qbLiZwh5tBTGpGMfEf7qnBPBtT7GzVYSe8nt3"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/IStablecoinInsuranceManager.sol",
+    "id": 52904,
+    "exportedSymbols": {
+      "IDataProvider": [
+        52836
+      ],
+      "IERC20": [
+        51107
+      ],
+      "IStablecoinInsuranceManager": [
+        52903
+      ],
+      "IStablecoinInsurancePolicy": [
+        52917
+      ],
+      "StablecoinInsurancePolicy": [
+        53796
+      ],
+      "console": [
+        10430
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:793:34",
+    "nodes": [
+      {
+        "id": 52852,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:34",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 52853,
+        "nodeType": "ImportDirective",
+        "src": "64:41:34",
+        "nodes": [],
+        "absolutePath": "src/StablecoinInsurancePolicy.sol",
+        "file": "./StablecoinInsurancePolicy.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52904,
+        "sourceUnit": 53797,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 52903,
+        "nodeType": "ContractDefinition",
+        "src": "107:724:34",
+        "nodes": [
+          {
+            "id": 52872,
+            "nodeType": "FunctionDefinition",
+            "src": "185:304:34",
+            "nodes": [],
+            "functionSelector": "e661e1f2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPolicy",
+            "nameLocation": "194:12:34",
+            "parameters": {
+              "id": 52868,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52855,
+                  "mutability": "mutable",
+                  "name": "_insuredToken",
+                  "nameLocation": "224:13:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "216:21:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52854,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "216:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52857,
+                  "mutability": "mutable",
+                  "name": "_insurerToken",
+                  "nameLocation": "255:13:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "247:21:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52856,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52859,
+                  "mutability": "mutable",
+                  "name": "_policyManagerContract",
+                  "nameLocation": "286:22:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "278:30:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52858,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "278:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52861,
+                  "mutability": "mutable",
+                  "name": "_premiumAmount",
+                  "nameLocation": "326:14:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "318:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 52860,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52863,
+                  "mutability": "mutable",
+                  "name": "_insuredAmount",
+                  "nameLocation": "358:14:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "350:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 52862,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "350:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52865,
+                  "mutability": "mutable",
+                  "name": "_policyTermInSeconds",
+                  "nameLocation": "390:20:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "382:28:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 52864,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "382:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52867,
+                  "mutability": "mutable",
+                  "name": "_depegTermInSeconds",
+                  "nameLocation": "428:19:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "420:27:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 52866,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "420:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "206:247:34"
+            },
+            "returnParameters": {
+              "id": 52871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52870,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52872,
+                  "src": "480:7:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52869,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "480:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "479:9:34"
+            },
+            "scope": 52903,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52877,
+            "nodeType": "FunctionDefinition",
+            "src": "495:51:34",
+            "nodes": [],
+            "functionSelector": "da2ae73c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activatePolicy",
+            "nameLocation": "504:14:34",
+            "parameters": {
+              "id": 52875,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52874,
+                  "mutability": "mutable",
+                  "name": "policyId",
+                  "nameLocation": "527:8:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52877,
+                  "src": "519:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52873,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "519:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:18:34"
+            },
+            "returnParameters": {
+              "id": 52876,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "545:0:34"
+            },
+            "scope": 52903,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52882,
+            "nodeType": "FunctionDefinition",
+            "src": "551:49:34",
+            "nodes": [],
+            "functionSelector": "a86146d0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelPolicy",
+            "nameLocation": "560:12:34",
+            "parameters": {
+              "id": 52880,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52879,
+                  "mutability": "mutable",
+                  "name": "policyId",
+                  "nameLocation": "581:8:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52882,
+                  "src": "573:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52878,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "573:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "572:18:34"
+            },
+            "returnParameters": {
+              "id": 52881,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "599:0:34"
+            },
+            "scope": 52903,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52887,
+            "nodeType": "FunctionDefinition",
+            "src": "605:54:34",
+            "nodes": [],
+            "functionSelector": "99f8a6cc",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recordPolicyDepeg",
+            "nameLocation": "614:17:34",
+            "parameters": {
+              "id": 52885,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52884,
+                  "mutability": "mutable",
+                  "name": "policyId",
+                  "nameLocation": "640:8:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52887,
+                  "src": "632:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52883,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "632:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:18:34"
+            },
+            "returnParameters": {
+              "id": 52886,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "658:0:34"
+            },
+            "scope": 52903,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52894,
+            "nodeType": "FunctionDefinition",
+            "src": "664:73:34",
+            "nodes": [],
+            "functionSelector": "c67503e2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "policyIsDepegged",
+            "nameLocation": "673:16:34",
+            "parameters": {
+              "id": 52890,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52889,
+                  "mutability": "mutable",
+                  "name": "policyId",
+                  "nameLocation": "698:8:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52894,
+                  "src": "690:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52888,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "690:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "689:18:34"
+            },
+            "returnParameters": {
+              "id": 52893,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52892,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52894,
+                  "src": "731:4:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 52891,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:4:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:6:34"
+            },
+            "scope": 52903,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52902,
+            "nodeType": "FunctionDefinition",
+            "src": "742:87:34",
+            "nodes": [],
+            "functionSelector": "a3f685f9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPolicy",
+            "nameLocation": "751:9:34",
+            "parameters": {
+              "id": 52897,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52896,
+                  "mutability": "mutable",
+                  "name": "policyId",
+                  "nameLocation": "769:8:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52902,
+                  "src": "761:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 52895,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "761:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "760:18:34"
+            },
+            "returnParameters": {
+              "id": 52901,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52900,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52902,
+                  "src": "802:25:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_StablecoinInsurancePolicy_$53796",
+                    "typeString": "contract StablecoinInsurancePolicy"
+                  },
+                  "typeName": {
+                    "id": 52899,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 52898,
+                      "name": "StablecoinInsurancePolicy",
+                      "nameLocations": [
+                        "802:25:34"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 53796,
+                      "src": "802:25:34"
+                    },
+                    "referencedDeclaration": 53796,
+                    "src": "802:25:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_StablecoinInsurancePolicy_$53796",
+                      "typeString": "contract StablecoinInsurancePolicy"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "801:27:34"
+            },
+            "scope": 52903,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStablecoinInsuranceManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          52903
+        ],
+        "name": "IStablecoinInsuranceManager",
+        "nameLocation": "117:27:34",
+        "scope": 52904,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 34
+}

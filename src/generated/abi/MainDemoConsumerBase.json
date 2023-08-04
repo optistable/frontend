@@ -1,0 +1,1140 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CalldataMustHaveValidPayload",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CalldataOverOrUnderFlow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CanNotPickMedianOfEmptyArray",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DataPackageTimestampMustNotBeZero",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DataPackageTimestampsMustBeEqual",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EachSignerMustProvideTheSameValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyCalldataPointersArr",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GetDataServiceIdNotImplemented",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IncorrectUnsignedMetadataSize",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receivedSignersCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "requiredSignersCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "InsufficientNumberOfUniqueSigners",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCalldataPointer",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RedstonePayloadMustHaveAtLeastOneDataPackage",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "receivedSigner",
+          "type": "address"
+        }
+      ],
+      "name": "SignerNotAuthorised",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receivedTimestampSeconds",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "TimestampFromTooLongFuture",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receivedTimestampSeconds",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "TimestampIsTooOld",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "values",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "aggregateValues",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "extractTimestampsAndAssertAllAreEqual",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "extractedTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "signerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getAuthorisedSignerIndex",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDataServiceId",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getUniqueSignersThreshold",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receivedTimestampMilliseconds",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateTimestamp",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5061082b806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80633ce142f51461006757806355a547d514610091578063b24ebfcc146100a7578063c274583a146100ba578063f50b2efe146100ee578063f90c492414610103575b600080fd5b61007a6100753660046105d1565b61010a565b60405160ff90911681526020015b60405180910390f35b610099610161565b604051908152602001610088565b6100996100b5366004610610565b610279565b604080518082018252601281527172656473746f6e652d6d61696e2d64656d6f60701b6020820152905161008891906106ce565b6101016100fc36600461071c565b61028a565b005b600161007a565b60006001600160a01b038216730c39486f770b26f5527bbbf942726537986cd7eb0361013857506000919050565b6040516303b1166f60e61b81526001600160a01b03831660048201526024015b60405180910390fd5b60008061016c610296565b9050600061017982610344565b61ffff169050806000036101a057604051632154bfcf60e21b815260040160405180910390fd5b6101ab60028361074b565b915060005b818110156102735760006101c38461037e565b90506000806101d360688761074b565b905060006101e1823661075e565b9050803592508265ffffffffffff1660000361021057604051630336dc9d60e41b815260040160405180910390fd5b87600003610228578265ffffffffffff169750610250565b878365ffffffffffff16146102505760405163d9d1f46560e01b815260040160405180910390fd5b61025a848861074b565b965050505050808061026b90610771565b9150506101b0565b50505090565b6000610284826103ba565b92915050565b610293816103c5565b50565b60006602ed57011e0000601f19360135811614806102c7576040516373bb264f60e11b815260040160405180910390fd5b600036602911156102eb57604051632bcb7bc560e11b815260040160405180910390fd5b5060281936013560006009610306600362ffffff851661074b565b610310919061074b565b90503661031e60028361074b565b111561033d5760405163c30a7bd760e01b815260040160405180910390fd5b9392505050565b60008061035260208461074b565b90503681111561037557604051632bcb7bc560e11b815260040160405180910390fd5b36033592915050565b600080600061038c84610449565b9092509050604e61039e82602061074b565b6103a8908461078a565b6103b2919061074b565b949350505050565b6000610284826104a0565b60006103d36103e8836107b7565b90508042101561041557603c6103e9428361075e565b11156104115760405163b6b0916d60e01b815260048101829052426024820152604401610158565b5050565b60b4610421824261075e565b111561041157604051630321d0b560e01b815260048101829052426024820152604401610158565b60008080808061045a60418761074b565b9050600061047361046c60208461074b565b369061056b565b80359450905061048481600361056b565b62ffffff9490941697933563ffffffff16965092945050505050565b600081516000036104c457604051639e198af960e01b815260040160405180910390fd5b6104cd82610577565b6000600283516104dd91906107b7565b9050600283516104ed91906107cb565b60000361054957600061053c8461050560018561075e565b81518110610515576105156107df565b602002602001015185848151811061052f5761052f6107df565b60200260200101516105c5565b90506103b26002826107b7565b82818151811061055b5761055b6107df565b6020026020010151915050919050565b600061033d828461075e565b8051602082016020820281019150805b828110156105bf57815b818110156105b65781518151808210156105ac578084528183525b5050602001610591565b50602001610587565b50505050565b600061033d828461074b565b6000602082840312156105e357600080fd5b81356001600160a01b038116811461033d57600080fd5b634e487b7160e01b600052604160045260246000fd5b6000602080838503121561062357600080fd5b823567ffffffffffffffff8082111561063b57600080fd5b818501915085601f83011261064f57600080fd5b813581811115610661576106616105fa565b8060051b604051601f19603f83011681018181108582111715610686576106866105fa565b6040529182528482019250838101850191888311156106a457600080fd5b938501935b828510156106c2578435845293850193928501926106a9565b98975050505050505050565b600060208083528351808285015260005b818110156106fb578581018301518582016040015282016106df565b506000604082860101526040601f19601f8301168501019250505092915050565b60006020828403121561072e57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561028457610284610735565b8181038181111561028457610284610735565b60006001820161078357610783610735565b5060010190565b808202811582820484141761028457610284610735565b634e487b7160e01b600052601260045260246000fd5b6000826107c6576107c66107a1565b500490565b6000826107da576107da6107a1565b500690565b634e487b7160e01b600052603260045260246000fdfea2646970667358221220ee07efd0151448bdbf52f490e79b75ad65e18670597e8937410e2604105c6b6364736f6c63430008130033",
+    "sourceMap": "114:579:29:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80633ce142f51461006757806355a547d514610091578063b24ebfcc146100a7578063c274583a146100ba578063f50b2efe146100ee578063f90c492414610103575b600080fd5b61007a6100753660046105d1565b61010a565b60405160ff90911681526020015b60405180910390f35b610099610161565b604051908152602001610088565b6100996100b5366004610610565b610279565b604080518082018252601281527172656473746f6e652d6d61696e2d64656d6f60701b6020820152905161008891906106ce565b6101016100fc36600461071c565b61028a565b005b600161007a565b60006001600160a01b038216730c39486f770b26f5527bbbf942726537986cd7eb0361013857506000919050565b6040516303b1166f60e61b81526001600160a01b03831660048201526024015b60405180910390fd5b60008061016c610296565b9050600061017982610344565b61ffff169050806000036101a057604051632154bfcf60e21b815260040160405180910390fd5b6101ab60028361074b565b915060005b818110156102735760006101c38461037e565b90506000806101d360688761074b565b905060006101e1823661075e565b9050803592508265ffffffffffff1660000361021057604051630336dc9d60e41b815260040160405180910390fd5b87600003610228578265ffffffffffff169750610250565b878365ffffffffffff16146102505760405163d9d1f46560e01b815260040160405180910390fd5b61025a848861074b565b965050505050808061026b90610771565b9150506101b0565b50505090565b6000610284826103ba565b92915050565b610293816103c5565b50565b60006602ed57011e0000601f19360135811614806102c7576040516373bb264f60e11b815260040160405180910390fd5b600036602911156102eb57604051632bcb7bc560e11b815260040160405180910390fd5b5060281936013560006009610306600362ffffff851661074b565b610310919061074b565b90503661031e60028361074b565b111561033d5760405163c30a7bd760e01b815260040160405180910390fd5b9392505050565b60008061035260208461074b565b90503681111561037557604051632bcb7bc560e11b815260040160405180910390fd5b36033592915050565b600080600061038c84610449565b9092509050604e61039e82602061074b565b6103a8908461078a565b6103b2919061074b565b949350505050565b6000610284826104a0565b60006103d36103e8836107b7565b90508042101561041557603c6103e9428361075e565b11156104115760405163b6b0916d60e01b815260048101829052426024820152604401610158565b5050565b60b4610421824261075e565b111561041157604051630321d0b560e01b815260048101829052426024820152604401610158565b60008080808061045a60418761074b565b9050600061047361046c60208461074b565b369061056b565b80359450905061048481600361056b565b62ffffff9490941697933563ffffffff16965092945050505050565b600081516000036104c457604051639e198af960e01b815260040160405180910390fd5b6104cd82610577565b6000600283516104dd91906107b7565b9050600283516104ed91906107cb565b60000361054957600061053c8461050560018561075e565b81518110610515576105156107df565b602002602001015185848151811061052f5761052f6107df565b60200260200101516105c5565b90506103b26002826107b7565b82818151811061055b5761055b6107df565b6020026020010151915050919050565b600061033d828461075e565b8051602082016020820281019150805b828110156105bf57815b818110156105b65781518151808210156105ac578084528183525b5050602001610591565b50602001610587565b50505050565b600061033d828461074b565b6000602082840312156105e357600080fd5b81356001600160a01b038116811461033d57600080fd5b634e487b7160e01b600052604160045260246000fd5b6000602080838503121561062357600080fd5b823567ffffffffffffffff8082111561063b57600080fd5b818501915085601f83011261064f57600080fd5b813581811115610661576106616105fa565b8060051b604051601f19603f83011681018181108582111715610686576106866105fa565b6040529182528482019250838101850191888311156106a457600080fd5b938501935b828510156106c2578435845293850193928501926106a9565b98975050505050505050565b600060208083528351808285015260005b818110156106fb578581018301518582016040015282016106df565b506000604082860101526040601f19601f8301168501019250505092915050565b60006020828403121561072e57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561028457610284610735565b8181038181111561028457610284610735565b60006001820161078357610783610735565b5060010190565b808202811582820484141761028457610284610735565b634e487b7160e01b600052601260045260246000fd5b6000826107c6576107c66107a1565b500490565b6000826107da576107da6107a1565b500690565b634e487b7160e01b600052603260045260246000fdfea2646970667358221220ee07efd0151448bdbf52f490e79b75ad65e18670597e8937410e2604105c6b6364736f6c63430008130033",
+    "sourceMap": "114:579:29:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;407:284;;;;;;:::i;:::-;;:::i;:::-;;;477:4:45;465:17;;;447:36;;435:2;420:18;407:284:29;;;;;;;;634:1416:24;;;:::i;:::-;;;640:25:45;;;628:2;613:18;634:1416:24;494:177:45;2786:149:26;;;;;;:::i;:::-;;:::i;179:119:29:-;266:27;;;;;;;;;;;-1:-1:-1;;;266:27:29;;;;179:119;;;;266:27;179:119;:::i;2011:165:26:-;;;;;;:::i;:::-;;:::i;:::-;;302:101:29;397:1;302:101;;407:284;522:5;-1:-1:-1;;;;;541:59:29;;558:42;541:59;537:150;;-1:-1:-1;617:1:29;;407:284;-1:-1:-1;407:284:29:o;537:150::-;646:34;;-1:-1:-1;;;646:34:29;;-1:-1:-1;;;;;2830:32:45;;646:34:29;;;2812:51:45;2785:18;;646:34:29;;;;;;;;634:1416:24;704:26;738:30;771:36;:34;:36::i;:::-;738:69;;813:25;841:61;879:22;841:37;:61::i;:::-;813:89;;;;913:17;934:1;913:22;909:96;;952:46;;-1:-1:-1;;;952:46:24;;;;;;;;;;;909:96;1011:48;1129:1:25;1011:48:24;;:::i;:::-;;;1070:24;1065:981;1119:17;1100:16;:36;1065:981;;;1166:27;1196:47;1220:22;1196:23;:47::i;:::-;1166:77;-1:-1:-1;1311:27:24;;1423:88;1771:3:25;1423:22:24;:88;:::i;:::-;1388:124;-1:-1:-1;1520:23:24;1546:41;1388:124;1546:8;:41;:::i;:::-;1520:67;;1651:15;1638:29;1614:53;;1687:20;:25;;1711:1;1687:25;1683:92;;1731:35;;-1:-1:-1;;;1731:35:24;;;;;;;;;;;1683:92;1787:18;1809:1;1787:23;1783:203;;1843:20;1822:41;;;;1783:203;;;1906:18;1882:20;:42;;;1878:108;;1943:34;;-1:-1:-1;;;1943:34:24;;;;;;;;;;;1878:108;1994:45;2020:19;1994:45;;:::i;:::-;;;1158:888;;;;1138:18;;;;;:::i;:::-;;;;1065:981;;;;732:1318;;634:1416;:::o;2786:149:26:-;2865:7;2887:43;2923:6;2887:35;:43::i;:::-;2880:50;2786:149;-1:-1:-1;;2786:149:26:o;2011:165::-;2103:68;2141:29;2103:37;:68::i;:::-;2011:165;:::o;2450:1169:24:-;2519:7;2824:20;-1:-1:-1;;2690:14:24;2686:37;2673:51;2799:46;;2757:96;;2864:81;;2908:30;;-1:-1:-1;;;2908:30:24;;;;;;;;;;;2864:81;3027:31;3111:8;2230:2:25;3068:58:24;3064:111;;;3143:25;;-1:-1:-1;;;3143:25:24;;;;;;;;;;;3064:111;-1:-1:-1;;;3251:14:24;3247:61;3225:91;3327:30;1479:1:25;3360:63:24;1427:1:25;3360:63:24;;;;:::i;:::-;:90;;;;:::i;:::-;3327:123;-1:-1:-1;3510:8:24;3460:47;1129:1:25;3327:123:24;3460:47;:::i;:::-;:65;3456:124;;;3542:31;;-1:-1:-1;;;3542:31:24;;;;;;;;;;;3456:124;3592:22;2450:1169;-1:-1:-1;;;2450:1169:24:o;3701:525::-;3815:24;;3898:41;524:2:25;3898:22:24;:41;:::i;:::-;3849:90;-1:-1:-1;3990:8:24;3949:56;;3945:109;;;4022:25;;-1:-1:-1;;;4022:25:24;;;;;;;;;;;3945:109;4123:14;4119:59;4097:89;;3701:525;-1:-1:-1;;3701:525:24:o;2054:392::-;2142:7;2165:23;2196:34;2239:63;2279:22;2239:39;:63::i;:::-;2157:145;;-1:-1:-1;2157:145:24;-1:-1:-1;1926:2:25;2347:49:24;2157:145;1300:2:25;2347:49:24;:::i;:::-;2322:75;;:15;:75;:::i;:::-;:119;;;;:::i;:::-;2309:132;2054:392;-1:-1:-1;;;;2054:392:24:o;1547:134:28:-;1620:7;1642:34;1669:6;1642:26;:34::i;584:959::-;1030:32;1065:36;1097:4;1065:29;:36;:::i;:::-;1030:71;;1130:24;1112:15;:42;1108:431;;;390:9;1169:42;1196:15;1169:24;:42;:::i;:::-;1168:87;1164:188;;;1274:69;;-1:-1:-1;;;1274:69:28;;;;;4013:25:45;;;1327:15:28;4054:18:45;;;4047:34;3986:18;;1274:69:28;3839:248:45;1164:188:28;664:879;584:959;:::o;1108:431::-;317:9;1369:42;1387:24;1369:15;:42;:::i;:::-;1368:87;1364:175;;;1472:60;;-1:-1:-1;;;1472:60:28;;;;;4013:25:45;;;1516:15:28;4054:18:45;;;4047:34;3986:18;;1472:60:28;3839:248:45;5035:1026:24;5165:23;;;;;5515:45;1026:2:25;5515:36:24;:45;:::i;:::-;5482:78;-1:-1:-1;5566:22:24;5591:62;5611:41;524:2:25;5482:78:24;5611:41;:::i;:::-;5591:8;;:19;:62::i;:::-;5696:28;;;-1:-1:-1;5566:87:24;-1:-1:-1;5795:40:24;5566:87;1183:1:25;5795:18:24;:40::i;:::-;5960:34;;;;;;5889:28;;6000:56;;;-1:-1:-1;5960:34:24;;-1:-1:-1;;;;;5035:1026:24:o;448:391:31:-;513:7;532:3;:10;546:1;532:15;528:73;;564:30;;-1:-1:-1;;;564:30:31;;;;;;;;;;;528:73;606:9;611:3;606:4;:9::i;:::-;621:19;656:1;643:3;:10;:14;;;;:::i;:::-;621:36;;680:1;667:3;:10;:14;;;;:::i;:::-;685:1;667:19;663:172;;696:11;710:52;723:3;727:15;741:1;727:11;:15;:::i;:::-;723:20;;;;;;;;:::i;:::-;;;;;;;745:3;749:11;745:16;;;;;;;;:::i;:::-;;;;;;;710:12;:52::i;:::-;696:66;-1:-1:-1;777:7:31;783:1;696:66;777:7;:::i;663:172::-;812:3;816:11;812:16;;;;;;;;:::i;:::-;;;;;;;805:23;;;448:391;;;:::o;3122:96:23:-;3180:7;3206:5;3210:1;3206;:5;:::i;843:750:31:-;939:3;933:10;976:20;971:3;967:30;1048:16;1037:9;1033:32;1022:9;1018:48;1004:62;;1102:9;1073:510;1132:6;1123:7;1120:19;1073:510;;;1258:9;1227:348;1290:7;1281;1278:20;1227:348;;;1410:7;1404:14;1447:7;1441:14;1478:4;1472;1469:14;1466:99;;;1514:4;1505:7;1498:21;1548:4;1539:7;1532:21;1466:99;-1:-1:-1;;1335:16:31;1322:30;1227:348;;;-1:-1:-1;1174:16:31;1161:30;1073:510;;;1077:42;;;843:750;:::o;2755:96:23:-;2813:7;2839:5;2843:1;2839;:5;:::i;14:286:45:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:45;;210:42;;200:70;;266:1;263;256:12;676:127;737:10;732:3;728:20;725:1;718:31;768:4;765:1;758:15;792:4;789:1;782:15;808:1115;892:6;923:2;966;954:9;945:7;941:23;937:32;934:52;;;982:1;979;972:12;934:52;1022:9;1009:23;1051:18;1092:2;1084:6;1081:14;1078:34;;;1108:1;1105;1098:12;1078:34;1146:6;1135:9;1131:22;1121:32;;1191:7;1184:4;1180:2;1176:13;1172:27;1162:55;;1213:1;1210;1203:12;1162:55;1249:2;1236:16;1271:2;1267;1264:10;1261:36;;;1277:18;;:::i;:::-;1323:2;1320:1;1316:10;1355:2;1349:9;1418:2;1414:7;1409:2;1405;1401:11;1397:25;1389:6;1385:38;1473:6;1461:10;1458:22;1453:2;1441:10;1438:18;1435:46;1432:72;;;1484:18;;:::i;:::-;1520:2;1513:22;1570:18;;;1604:15;;;;-1:-1:-1;1646:11:45;;;1642:20;;;1674:19;;;1671:39;;;1706:1;1703;1696:12;1671:39;1730:11;;;;1750:142;1766:6;1761:3;1758:15;1750:142;;;1832:17;;1820:30;;1783:12;;;;1870;;;;1750:142;;;1911:6;808:1115;-1:-1:-1;;;;;;;;808:1115:45:o;1928:548::-;2040:4;2069:2;2098;2087:9;2080:21;2130:6;2124:13;2173:6;2168:2;2157:9;2153:18;2146:34;2198:1;2208:140;2222:6;2219:1;2216:13;2208:140;;;2317:14;;;2313:23;;2307:30;2283:17;;;2302:2;2279:26;2272:66;2237:10;;2208:140;;;2212:3;2397:1;2392:2;2383:6;2372:9;2368:22;2364:31;2357:42;2467:2;2460;2456:7;2451:2;2443:6;2439:15;2435:29;2424:9;2420:45;2416:54;2408:62;;;;1928:548;;;;:::o;2481:180::-;2540:6;2593:2;2581:9;2572:7;2568:23;2564:32;2561:52;;;2609:1;2606;2599:12;2561:52;-1:-1:-1;2632:23:45;;2481:180;-1:-1:-1;2481:180:45:o;2874:127::-;2935:10;2930:3;2926:20;2923:1;2916:31;2966:4;2963:1;2956:15;2990:4;2987:1;2980:15;3006:125;3071:9;;;3092:10;;;3089:36;;;3105:18;;:::i;3136:128::-;3203:9;;;3224:11;;;3221:37;;;3238:18;;:::i;3269:135::-;3308:3;3329:17;;;3326:43;;3349:18;;:::i;:::-;-1:-1:-1;3396:1:45;3385:13;;3269:135::o;3409:168::-;3482:9;;;3513;;3530:15;;;3524:22;;3510:37;3500:71;;3551:18;;:::i;3582:127::-;3643:10;3638:3;3634:20;3631:1;3624:31;3674:4;3671:1;3664:15;3698:4;3695:1;3688:15;3714:120;3754:1;3780;3770:35;;3785:18;;:::i;:::-;-1:-1:-1;3819:9:45;;3714:120::o;4092:112::-;4124:1;4150;4140:35;;4155:18;;:::i;:::-;-1:-1:-1;4189:9:45;;4092:112::o;4209:127::-;4270:10;4265:3;4261:20;4258:1;4251:31;4301:4;4298:1;4291:15;4325:4;4322:1;4315:15",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "aggregateValues(uint256[])": "b24ebfcc",
+    "extractTimestampsAndAssertAllAreEqual()": "55a547d5",
+    "getAuthorisedSignerIndex(address)": "3ce142f5",
+    "getDataServiceId()": "c274583a",
+    "getUniqueSignersThreshold()": "f90c4924",
+    "validateTimestamp(uint256)": "f50b2efe"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"CalldataMustHaveValidPayload\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CalldataOverOrUnderFlow\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CanNotPickMedianOfEmptyArray\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DataPackageTimestampMustNotBeZero\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DataPackageTimestampsMustBeEqual\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"EachSignerMustProvideTheSameValue\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"EmptyCalldataPointersArr\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"GetDataServiceIdNotImplemented\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"IncorrectUnsignedMetadataSize\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"receivedSignersCount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"requiredSignersCount\",\"type\":\"uint256\"}],\"name\":\"InsufficientNumberOfUniqueSigners\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidCalldataPointer\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"RedstonePayloadMustHaveAtLeastOneDataPackage\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receivedSigner\",\"type\":\"address\"}],\"name\":\"SignerNotAuthorised\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"receivedTimestampSeconds\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"blockTimestamp\",\"type\":\"uint256\"}],\"name\":\"TimestampFromTooLongFuture\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"receivedTimestampSeconds\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"blockTimestamp\",\"type\":\"uint256\"}],\"name\":\"TimestampIsTooOld\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"aggregateValues\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"extractTimestampsAndAssertAllAreEqual\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"extractedTimestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"signerAddress\",\"type\":\"address\"}],\"name\":\"getAuthorisedSignerIndex\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getDataServiceId\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getUniqueSignersThreshold\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"receivedTimestampMilliseconds\",\"type\":\"uint256\"}],\"name\":\"validateTimestamp\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"aggregateValues(uint256[])\":{\"details\":\"This function may be overridden by the child consumer contract. It should aggregate values from different signers to a single uint value. By default, it calculates the median value\",\"params\":{\"values\":\"An array of uint256 values from different signers\"},\"returns\":{\"_0\":\"Result of the aggregation in the form of a single number\"}},\"getDataServiceId()\":{\"details\":\"This function must be implemented by the child consumer contract. It should return dataServiceId which DataServiceWrapper will use if not provided explicitly . If not overridden, value will always have to be provided explicitly in DataServiceWrapper.\",\"returns\":{\"_0\":\"dataServiceId being consumed by contract\"}},\"getUniqueSignersThreshold()\":{\"details\":\"This function should be overridden by the child consumer contract.\",\"returns\":{\"_0\":\"The minimum required value of unique authorised signers\"}},\"validateTimestamp(uint256)\":{\"details\":\"This function may be overridden by the child consumer contract. It should validate the timestamp against the current time (block.timestamp) It should revert with a helpful message if the timestamp is not valid\",\"params\":{\"receivedTimestampMilliseconds\":\"Timestamp extracted from calldata\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/data-services/MainDemoConsumerBase.sol\":\"MainDemoConsumerBase\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x58b21219689909c4f8339af00813760337f7e2e7f169a97fe49e2896dcfb3b9a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ef8e012e946dec20e59f2d4446f4b44bb098f3fa8bac103b1b5112fff777447b\",\"dweb:/ipfs/QmVTooKWcLkJ9W68yNX4MgdrbAKiAXwuRN9A7f4NkdcdtQ\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/CalldataExtractor.sol\":{\"keccak256\":\"0x7a381362d355b7c2eff8cf9a2b0e0836d7b7c950b32f0fb65f1e4fc43c0c7379\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2e395c76dcdf725a268103052be7127ea2da7b7e394a1abb267192a87dc1bd2b\",\"dweb:/ipfs/QmdAvALKcVDYXuJTpy54caPGpVGsZZqiJ2Emesr7Pt6JLj\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol\":{\"keccak256\":\"0x82ab78ed59f4a811f5ab5c32064099235d753f98df42c087476ddabbf0348f21\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://7c4b78b95bff4fbe0c57747c812c22c0f3b9581f4cf2cbf8af0c21aad6ca880f\",\"dweb:/ipfs/QmdRBJUpdPUZPF4mwy6M4EivSQsWBvH4qbmtnaau3ft9V3\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConsumerBase.sol\":{\"keccak256\":\"0x9f67e176ef49bc988486de896bddce913dc0679b6f3f2cf9fd9803e683927d42\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2497ae8faafbb5bc2f5b14e9ce77f94687842472a4b69416cfd73465b315f4f8\",\"dweb:/ipfs/QmUAmQqsoUGNpsEpMGFUMvRA1n2LWMifgCk2VenuzKok9d\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol\":{\"keccak256\":\"0xe8e70ed8bb3efc527dccaf5919587c7ff3980836256d7d8db8f632721a3cf956\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://550168f845b478dbb81f3f5dcf71cc61d64558a6dd676d95d2c46008b5e3e380\",\"dweb:/ipfs/Qmc2F5p3NdVubj733YqBGHyhA4TBnvEbqRRadkedboKw8Y\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneDefaultsLib.sol\":{\"keccak256\":\"0xe39ee1618d15944d6f44918f02f71d0d604fb678dbdbf36ca1eeecc86858ff25\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2bcb45b6abee6ba18742a9e4374afc04f4be16de11d154ca846e96a37f3b6e73\",\"dweb:/ipfs/QmYUqJyfdj7YwvGthGKxzryC2mGQGTGZy7SYZZt7m7w3oo\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/data-services/MainDemoConsumerBase.sol\":{\"keccak256\":\"0x6654b1dfa48265518ff58ee5197a668d79736f282287dea3177bed6e8c92f125\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://752eb00b89ee6c16eccf31191b17452b29f7a71111083b0dd7d32bada43c40b1\",\"dweb:/ipfs/QmYiWbRntZ2imY9ectiAnTiJL5Ps1fah2L8kMXdpqBTqy8\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/BitmapLib.sol\":{\"keccak256\":\"0x9762198cae997eebad303a7a43a6133908646ed30811285085c9ea9cbd2a5e07\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://29f56e08f523a11d5f1ab083f5c613e7654a74613b2270f9e8860fa493bf2ceb\",\"dweb:/ipfs/QmUpD9U3GV7ZpjFEVvqSXGYfvwkBdeV5CoTiH1EzH8woJa\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/NumericArrayLib.sol\":{\"keccak256\":\"0x9b1a3a433a450cbe90e85801ddf891ab26deeda02d45a2d67e24443cdc33e764\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://967761b57c78ea600ba6efa5a49cdd0c020339596871c22ada9d309eaa4d8acd\",\"dweb:/ipfs/QmUeGHZkXdovDYwhwUKj5pPfdS4hVv68tzhjVXieWCQtUt\"]},\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/SignatureLib.sol\":{\"keccak256\":\"0x06037b440e5eab52d550718543c463da00ac7231f303a503178ad5191e154310\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7bfb27ed76efa93423e40c276d2caefeab957561946f808169511b87d127e4c4\",\"dweb:/ipfs/QmT3wt6FhAf7PFDZ1Z2mNx1671Yudz7UCjqnoFkEKCgt92\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CalldataMustHaveValidPayload"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CalldataOverOrUnderFlow"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CanNotPickMedianOfEmptyArray"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DataPackageTimestampMustNotBeZero"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DataPackageTimestampsMustBeEqual"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "EachSignerMustProvideTheSameValue"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "EmptyCalldataPointersArr"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "GetDataServiceIdNotImplemented"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "IncorrectUnsignedMetadataSize"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "receivedSignersCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "requiredSignersCount",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "InsufficientNumberOfUniqueSigners"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidCalldataPointer"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "RedstonePayloadMustHaveAtLeastOneDataPackage"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "receivedSigner",
+              "type": "address"
+            }
+          ],
+          "type": "error",
+          "name": "SignerNotAuthorised"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "receivedTimestampSeconds",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "TimestampFromTooLongFuture"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "receivedTimestampSeconds",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "blockTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "TimestampIsTooOld"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "values",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "aggregateValues",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "extractTimestampsAndAssertAllAreEqual",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "extractedTimestamp",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "signerAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAuthorisedSignerIndex",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getDataServiceId",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getUniqueSignersThreshold",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "receivedTimestampMilliseconds",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "validateTimestamp"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "aggregateValues(uint256[])": {
+            "details": "This function may be overridden by the child consumer contract. It should aggregate values from different signers to a single uint value. By default, it calculates the median value",
+            "params": {
+              "values": "An array of uint256 values from different signers"
+            },
+            "returns": {
+              "_0": "Result of the aggregation in the form of a single number"
+            }
+          },
+          "getDataServiceId()": {
+            "details": "This function must be implemented by the child consumer contract. It should return dataServiceId which DataServiceWrapper will use if not provided explicitly . If not overridden, value will always have to be provided explicitly in DataServiceWrapper.",
+            "returns": {
+              "_0": "dataServiceId being consumed by contract"
+            }
+          },
+          "getUniqueSignersThreshold()": {
+            "details": "This function should be overridden by the child consumer contract.",
+            "returns": {
+              "_0": "The minimum required value of unique authorised signers"
+            }
+          },
+          "validateTimestamp(uint256)": {
+            "details": "This function may be overridden by the child consumer contract. It should validate the timestamp against the current time (block.timestamp) It should revert with a helpful message if the timestamp is not valid",
+            "params": {
+              "receivedTimestampMilliseconds": "Timestamp extracted from calldata"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        ":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        ":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/data-services/MainDemoConsumerBase.sol": "MainDemoConsumerBase"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol": {
+        "keccak256": "0x58b21219689909c4f8339af00813760337f7e2e7f169a97fe49e2896dcfb3b9a",
+        "urls": [
+          "bzz-raw://ef8e012e946dec20e59f2d4446f4b44bb098f3fa8bac103b1b5112fff777447b",
+          "dweb:/ipfs/QmVTooKWcLkJ9W68yNX4MgdrbAKiAXwuRN9A7f4NkdcdtQ"
+        ],
+        "license": "MIT"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/CalldataExtractor.sol": {
+        "keccak256": "0x7a381362d355b7c2eff8cf9a2b0e0836d7b7c950b32f0fb65f1e4fc43c0c7379",
+        "urls": [
+          "bzz-raw://2e395c76dcdf725a268103052be7127ea2da7b7e394a1abb267192a87dc1bd2b",
+          "dweb:/ipfs/QmdAvALKcVDYXuJTpy54caPGpVGsZZqiJ2Emesr7Pt6JLj"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol": {
+        "keccak256": "0x82ab78ed59f4a811f5ab5c32064099235d753f98df42c087476ddabbf0348f21",
+        "urls": [
+          "bzz-raw://7c4b78b95bff4fbe0c57747c812c22c0f3b9581f4cf2cbf8af0c21aad6ca880f",
+          "dweb:/ipfs/QmdRBJUpdPUZPF4mwy6M4EivSQsWBvH4qbmtnaau3ft9V3"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConsumerBase.sol": {
+        "keccak256": "0x9f67e176ef49bc988486de896bddce913dc0679b6f3f2cf9fd9803e683927d42",
+        "urls": [
+          "bzz-raw://2497ae8faafbb5bc2f5b14e9ce77f94687842472a4b69416cfd73465b315f4f8",
+          "dweb:/ipfs/QmUAmQqsoUGNpsEpMGFUMvRA1n2LWMifgCk2VenuzKok9d"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol": {
+        "keccak256": "0xe8e70ed8bb3efc527dccaf5919587c7ff3980836256d7d8db8f632721a3cf956",
+        "urls": [
+          "bzz-raw://550168f845b478dbb81f3f5dcf71cc61d64558a6dd676d95d2c46008b5e3e380",
+          "dweb:/ipfs/Qmc2F5p3NdVubj733YqBGHyhA4TBnvEbqRRadkedboKw8Y"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneDefaultsLib.sol": {
+        "keccak256": "0xe39ee1618d15944d6f44918f02f71d0d604fb678dbdbf36ca1eeecc86858ff25",
+        "urls": [
+          "bzz-raw://2bcb45b6abee6ba18742a9e4374afc04f4be16de11d154ca846e96a37f3b6e73",
+          "dweb:/ipfs/QmYUqJyfdj7YwvGthGKxzryC2mGQGTGZy7SYZZt7m7w3oo"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/data-services/MainDemoConsumerBase.sol": {
+        "keccak256": "0x6654b1dfa48265518ff58ee5197a668d79736f282287dea3177bed6e8c92f125",
+        "urls": [
+          "bzz-raw://752eb00b89ee6c16eccf31191b17452b29f7a71111083b0dd7d32bada43c40b1",
+          "dweb:/ipfs/QmYiWbRntZ2imY9ectiAnTiJL5Ps1fah2L8kMXdpqBTqy8"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/BitmapLib.sol": {
+        "keccak256": "0x9762198cae997eebad303a7a43a6133908646ed30811285085c9ea9cbd2a5e07",
+        "urls": [
+          "bzz-raw://29f56e08f523a11d5f1ab083f5c613e7654a74613b2270f9e8860fa493bf2ceb",
+          "dweb:/ipfs/QmUpD9U3GV7ZpjFEVvqSXGYfvwkBdeV5CoTiH1EzH8woJa"
+        ],
+        "license": "MIT"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/NumericArrayLib.sol": {
+        "keccak256": "0x9b1a3a433a450cbe90e85801ddf891ab26deeda02d45a2d67e24443cdc33e764",
+        "urls": [
+          "bzz-raw://967761b57c78ea600ba6efa5a49cdd0c020339596871c22ada9d309eaa4d8acd",
+          "dweb:/ipfs/QmUeGHZkXdovDYwhwUKj5pPfdS4hVv68tzhjVXieWCQtUt"
+        ],
+        "license": "MIT"
+      },
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/libs/SignatureLib.sol": {
+        "keccak256": "0x06037b440e5eab52d550718543c463da00ac7231f303a503178ad5191e154310",
+        "urls": [
+          "bzz-raw://7bfb27ed76efa93423e40c276d2caefeab957561946f808169511b87d127e4c4",
+          "dweb:/ipfs/QmT3wt6FhAf7PFDZ1Z2mNx1671Yudz7UCjqnoFkEKCgt92"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+    "id": 52703,
+    "exportedSymbols": {
+      "BitmapLib": [
+        52745
+      ],
+      "CalldataExtractor": [
+        51793
+      ],
+      "MainDemoConsumerBase": [
+        52702
+      ],
+      "NumericArrayLib": [
+        52825
+      ],
+      "RedstoneConstants": [
+        51879
+      ],
+      "RedstoneConsumerBase": [
+        52362
+      ],
+      "RedstoneConsumerNumericBase": [
+        52572
+      ],
+      "RedstoneDefaultsLib": [
+        52657
+      ],
+      "SafeMath": [
+        51480
+      ],
+      "SignatureLib": [
+        52861
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:656:29",
+    "nodes": [
+      {
+        "id": 52659,
+        "nodeType": "PragmaDirective",
+        "src": "38:23:29",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 52660,
+        "nodeType": "ImportDirective",
+        "src": "63:49:29",
+        "nodes": [],
+        "absolutePath": "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol",
+        "file": "../core/RedstoneConsumerNumericBase.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 52703,
+        "sourceUnit": 52573,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 52702,
+        "nodeType": "ContractDefinition",
+        "src": "114:579:29",
+        "nodes": [
+          {
+            "id": 52671,
+            "nodeType": "FunctionDefinition",
+            "src": "179:119:29",
+            "nodes": [],
+            "body": {
+              "id": 52670,
+              "nodeType": "Block",
+              "src": "260:38:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "72656473746f6e652d6d61696e2d64656d6f",
+                    "id": 52668,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "273:20:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_b522df0e11f4aeb232e124b756aec857b2fd60745e6caa8522e8a5fb84cade63",
+                      "typeString": "literal_string \"redstone-main-demo\""
+                    },
+                    "value": "redstone-main-demo"
+                  },
+                  "functionReturnParameters": 52667,
+                  "id": 52669,
+                  "nodeType": "Return",
+                  "src": "266:27:29"
+                }
+              ]
+            },
+            "baseFunctions": [
+              51905
+            ],
+            "functionSelector": "c274583a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getDataServiceId",
+            "nameLocation": "188:16:29",
+            "overrides": {
+              "id": 52664,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "227:8:29"
+            },
+            "parameters": {
+              "id": 52663,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:2:29"
+            },
+            "returnParameters": {
+              "id": 52667,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52666,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52671,
+                  "src": "245:13:29",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 52665,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:15:29"
+            },
+            "scope": 52702,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 52680,
+            "nodeType": "FunctionDefinition",
+            "src": "302:101:29",
+            "nodes": [],
+            "body": {
+              "id": 52679,
+              "nodeType": "Block",
+              "src": "384:19:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "31",
+                    "id": 52677,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "397:1:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_1_by_1",
+                      "typeString": "int_const 1"
+                    },
+                    "value": "1"
+                  },
+                  "functionReturnParameters": 52676,
+                  "id": 52678,
+                  "nodeType": "Return",
+                  "src": "390:8:29"
+                }
+              ]
+            },
+            "baseFunctions": [
+              51935
+            ],
+            "functionSelector": "f90c4924",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUniqueSignersThreshold",
+            "nameLocation": "311:25:29",
+            "overrides": {
+              "id": 52673,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "359:8:29"
+            },
+            "parameters": {
+              "id": 52672,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "336:2:29"
+            },
+            "returnParameters": {
+              "id": 52676,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52675,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52680,
+                  "src": "377:5:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 52674,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:5:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "376:7:29"
+            },
+            "scope": 52702,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 52701,
+            "nodeType": "FunctionDefinition",
+            "src": "407:284:29",
+            "nodes": [],
+            "body": {
+              "id": 52700,
+              "nodeType": "Block",
+              "src": "531:160:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 52690,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 52688,
+                      "name": "signerAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52682,
+                      "src": "541:13:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "hexValue": "307830433339343836663737304232364635353237424242663934323732363533373938364364376562",
+                      "id": 52689,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "558:42:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "value": "0x0C39486f770B26F5527BBBf942726537986Cd7eb"
+                    },
+                    "src": "541:59:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 52698,
+                    "nodeType": "Block",
+                    "src": "631:56:29",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [
+                            {
+                              "id": 52695,
+                              "name": "signerAddress",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 52682,
+                              "src": "666:13:29",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 52694,
+                            "name": "SignerNotAuthorised",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51878,
+                            "src": "646:19:29",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$_t_address_$returns$__$",
+                              "typeString": "function (address) pure"
+                            }
+                          },
+                          "id": 52696,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "646:34:29",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 52697,
+                        "nodeType": "RevertStatement",
+                        "src": "639:41:29"
+                      }
+                    ]
+                  },
+                  "id": 52699,
+                  "nodeType": "IfStatement",
+                  "src": "537:150:29",
+                  "trueBody": {
+                    "id": 52693,
+                    "nodeType": "Block",
+                    "src": "602:23:29",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "30",
+                          "id": 52691,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "617:1:29",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "functionReturnParameters": 52687,
+                        "id": 52692,
+                        "nodeType": "Return",
+                        "src": "610:8:29"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "baseFunctions": [
+              51913
+            ],
+            "functionSelector": "3ce142f5",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAuthorisedSignerIndex",
+            "nameLocation": "416:24:29",
+            "overrides": {
+              "id": 52684,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "500:8:29"
+            },
+            "parameters": {
+              "id": 52683,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52682,
+                  "mutability": "mutable",
+                  "name": "signerAddress",
+                  "nameLocation": "449:13:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52701,
+                  "src": "441:21:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 52681,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "440:23:29"
+            },
+            "returnParameters": {
+              "id": 52687,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52686,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52701,
+                  "src": "522:5:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 52685,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:5:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "521:7:29"
+            },
+            "scope": 52702,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 52661,
+              "name": "RedstoneConsumerNumericBase",
+              "nameLocations": [
+                "147:27:29"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 52572,
+              "src": "147:27:29"
+            },
+            "id": 52662,
+            "nodeType": "InheritanceSpecifier",
+            "src": "147:27:29"
+          }
+        ],
+        "canonicalName": "MainDemoConsumerBase",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          52702,
+          52572,
+          52362,
+          51793,
+          51879
+        ],
+        "name": "MainDemoConsumerBase",
+        "nameLocation": "123:20:29",
+        "scope": 52703,
+        "usedErrors": [
+          51492,
+          51494,
+          51496,
+          51858,
+          51860,
+          51866,
+          51868,
+          51870,
+          51872,
+          51874,
+          51878,
+          51895,
+          52588,
+          52594,
+          52756
+        ]
+      }
+    ],
+    "license": "BUSL-1.1"
+  },
+  "id": 29
+}

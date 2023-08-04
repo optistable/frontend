@@ -1,0 +1,285 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "cancelPolicy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isDepegged",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "recordDepeg",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "cancelPolicy()": "4ef2cc00",
+    "isDepegged()": "5a0332a4",
+    "recordDepeg()": "6474be6a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"cancelPolicy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isDepegged\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"recordDepeg\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IStablecoinInsurancePolicy.sol\":\"IStablecoinInsurancePolicy\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/\"]},\"sources\":{\"src/IStablecoinInsurancePolicy.sol\":{\"keccak256\":\"0xb18a53dadb5f54820e6f6e1aeb0f61ab53c984b858d0ed9764d99bd1ff69ad4c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c806e8d610876d67ce8c765be723a445de991d4fcc11292375b209a2c04fb09c\",\"dweb:/ipfs/QmfRvGoZeNS139p98mNiHVKcTTo8EWsPCUxFRkg543uhsV\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "cancelPolicy"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isDepegged",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "recordDepeg"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        ":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        ":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/IStablecoinInsurancePolicy.sol": "IStablecoinInsurancePolicy"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/IStablecoinInsurancePolicy.sol": {
+        "keccak256": "0xb18a53dadb5f54820e6f6e1aeb0f61ab53c984b858d0ed9764d99bd1ff69ad4c",
+        "urls": [
+          "bzz-raw://c806e8d610876d67ce8c765be723a445de991d4fcc11292375b209a2c04fb09c",
+          "dweb:/ipfs/QmfRvGoZeNS139p98mNiHVKcTTo8EWsPCUxFRkg543uhsV"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/IStablecoinInsurancePolicy.sol",
+    "id": 52918,
+    "exportedSymbols": {
+      "IStablecoinInsurancePolicy": [
+        52917
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:204:35",
+    "nodes": [
+      {
+        "id": 52905,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:35",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 52917,
+        "nodeType": "ContractDefinition",
+        "src": "65:177:35",
+        "nodes": [
+          {
+            "id": 52910,
+            "nodeType": "FunctionDefinition",
+            "src": "113:51:35",
+            "nodes": [],
+            "functionSelector": "5a0332a4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isDepegged",
+            "nameLocation": "122:10:35",
+            "parameters": {
+              "id": 52906,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:2:35"
+            },
+            "returnParameters": {
+              "id": 52909,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52908,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52910,
+                  "src": "158:4:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 52907,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "158:4:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "157:6:35"
+            },
+            "scope": 52917,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52913,
+            "nodeType": "FunctionDefinition",
+            "src": "169:32:35",
+            "nodes": [],
+            "functionSelector": "6474be6a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recordDepeg",
+            "nameLocation": "178:11:35",
+            "parameters": {
+              "id": 52911,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "189:2:35"
+            },
+            "returnParameters": {
+              "id": 52912,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "200:0:35"
+            },
+            "scope": 52917,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 52916,
+            "nodeType": "FunctionDefinition",
+            "src": "206:33:35",
+            "nodes": [],
+            "functionSelector": "4ef2cc00",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelPolicy",
+            "nameLocation": "215:12:35",
+            "parameters": {
+              "id": 52914,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "227:2:35"
+            },
+            "returnParameters": {
+              "id": 52915,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "238:0:35"
+            },
+            "scope": 52917,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStablecoinInsurancePolicy",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          52917
+        ],
+        "name": "IStablecoinInsurancePolicy",
+        "nameLocation": "75:26:35",
+        "scope": 52918,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 35
+}

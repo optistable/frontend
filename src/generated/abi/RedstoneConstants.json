@@ -1,0 +1,1330 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CalldataMustHaveValidPayload",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CalldataOverOrUnderFlow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EachSignerMustProvideTheSameValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmptyCalldataPointersArr",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IncorrectUnsignedMetadataSize",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receivedSignersCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "requiredSignersCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "InsufficientNumberOfUniqueSigners",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidCalldataPointer",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "receivedSigner",
+          "type": "address"
+        }
+      ],
+      "name": "SignerNotAuthorised",
+      "type": "error"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e53f48b288d22640bc30410cc30f9664a1e335b86ed49aa0f0fb436483f9694e64736f6c63430008130033",
+    "sourceMap": "309:2375:25:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea2646970667358221220e53f48b288d22640bc30410cc30f9664a1e335b86ed49aa0f0fb436483f9694e64736f6c63430008130033",
+    "sourceMap": "309:2375:25:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"CalldataMustHaveValidPayload\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CalldataOverOrUnderFlow\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"EachSignerMustProvideTheSameValue\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"EmptyCalldataPointersArr\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"IncorrectUnsignedMetadataSize\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"receivedSignersCount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"requiredSignersCount\",\"type\":\"uint256\"}],\"name\":\"InsufficientNumberOfUniqueSigners\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidCalldataPointer\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receivedSigner\",\"type\":\"address\"}],\"name\":\"SignerNotAuthorised\",\"type\":\"error\"}],\"devdoc\":{\"author\":\"The Redstone Oracles team\",\"details\":\"It mainly contains redstone-related values, which improve readability of other contracts (e.g. CalldataExtractor and RedstoneConsumerBase)\",\"kind\":\"dev\",\"methods\":{},\"title\":\"The base contract with helpful constants\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol\":\"RedstoneConstants\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/\"]},\"sources\":{\"lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol\":{\"keccak256\":\"0x82ab78ed59f4a811f5ab5c32064099235d753f98df42c087476ddabbf0348f21\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://7c4b78b95bff4fbe0c57747c812c22c0f3b9581f4cf2cbf8af0c21aad6ca880f\",\"dweb:/ipfs/QmdRBJUpdPUZPF4mwy6M4EivSQsWBvH4qbmtnaau3ft9V3\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CalldataMustHaveValidPayload"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CalldataOverOrUnderFlow"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "EachSignerMustProvideTheSameValue"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "EmptyCalldataPointersArr"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "IncorrectUnsignedMetadataSize"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "receivedSignersCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "requiredSignersCount",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "InsufficientNumberOfUniqueSigners"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidCalldataPointer"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "receivedSigner",
+              "type": "address"
+            }
+          ],
+          "type": "error",
+          "name": "SignerNotAuthorised"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        ":@redstone-finance/evm-connector/dist/contracts/=lib/redstone-oracles-monorepo/packages/evm-connector/contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        ":redstone-oracles-monorepo/=lib/redstone-oracles-monorepo/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol": "RedstoneConstants"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol": {
+        "keccak256": "0x82ab78ed59f4a811f5ab5c32064099235d753f98df42c087476ddabbf0348f21",
+        "urls": [
+          "bzz-raw://7c4b78b95bff4fbe0c57747c812c22c0f3b9581f4cf2cbf8af0c21aad6ca880f",
+          "dweb:/ipfs/QmdRBJUpdPUZPF4mwy6M4EivSQsWBvH4qbmtnaau3ft9V3"
+        ],
+        "license": "BUSL-1.1"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/redstone-oracles-monorepo/packages/evm-connector/contracts/core/RedstoneConstants.sol",
+    "id": 51880,
+    "exportedSymbols": {
+      "RedstoneConstants": [
+        51879
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:2647:25",
+    "nodes": [
+      {
+        "id": 51795,
+        "nodeType": "PragmaDirective",
+        "src": "38:23:25",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 51879,
+        "nodeType": "ContractDefinition",
+        "src": "309:2375:25",
+        "nodes": [
+          {
+            "id": 51799,
+            "nodeType": "VariableDeclaration",
+            "src": "479:47:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "STANDARD_SLOT_BS",
+            "nameLocation": "505:16:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51797,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "479:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 51798,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "524:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51802,
+            "nodeType": "VariableDeclaration",
+            "src": "530:48:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "FREE_MEMORY_PTR",
+            "nameLocation": "556:15:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51800,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "530:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "30783430",
+              "id": 51801,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "574:4:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_64_by_1",
+                "typeString": "int_const 64"
+              },
+              "value": "0x40"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51805,
+            "nodeType": "VariableDeclaration",
+            "src": "582:51:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "BYTES_ARR_LEN_VAR_BS",
+            "nameLocation": "608:20:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51803,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "582:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 51804,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "631:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51808,
+            "nodeType": "VariableDeclaration",
+            "src": "637:51:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "FUNCTION_SIGNATURE_BS",
+            "nameLocation": "663:21:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51806,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "637:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "34",
+              "id": 51807,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "687:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
+              },
+              "value": "4"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51811,
+            "nodeType": "VariableDeclaration",
+            "src": "692:48:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "REVERT_MSG_OFFSET",
+            "nameLocation": "718:17:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51809,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "692:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3638",
+              "id": 51810,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "738:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_68_by_1",
+                "typeString": "int_const 68"
+              },
+              "value": "68"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51814,
+            "nodeType": "VariableDeclaration",
+            "src": "838:118:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "STRING_ERR_MESSAGE_MASK",
+            "nameLocation": "864:23:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51812,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "838:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "307830386333373961303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030",
+              "id": 51813,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "890:66:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3963877391197344453575983046348115674221700746820753546331534351508065746944_by_1",
+                "typeString": "int_const 3963...(68 digits omitted)...6944"
+              },
+              "value": "0x08c379a000000000000000000000000000000000000000000000000000000000"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51817,
+            "nodeType": "VariableDeclaration",
+            "src": "991:37:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "SIG_BS",
+            "nameLocation": "1017:6:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51815,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "991:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3635",
+              "id": 51816,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1026:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_65_by_1",
+                "typeString": "int_const 65"
+              },
+              "value": "65"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51820,
+            "nodeType": "VariableDeclaration",
+            "src": "1032:42:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "TIMESTAMP_BS",
+            "nameLocation": "1058:12:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51818,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1032:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "36",
+              "id": 51819,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1073:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_6_by_1",
+                "typeString": "int_const 6"
+              },
+              "value": "6"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51823,
+            "nodeType": "VariableDeclaration",
+            "src": "1078:52:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_PACKAGES_COUNT_BS",
+            "nameLocation": "1104:22:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51821,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1078:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "32",
+              "id": 51822,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1129:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51826,
+            "nodeType": "VariableDeclaration",
+            "src": "1134:50:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_POINTS_COUNT_BS",
+            "nameLocation": "1160:20:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51824,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1134:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "33",
+              "id": 51825,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1183:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3_by_1",
+                "typeString": "int_const 3"
+              },
+              "value": "3"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51829,
+            "nodeType": "VariableDeclaration",
+            "src": "1188:59:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_POINT_VALUE_BYTE_SIZE_BS",
+            "nameLocation": "1214:29:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51827,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1188:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "34",
+              "id": 51828,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1246:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
+              },
+              "value": "4"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51832,
+            "nodeType": "VariableDeclaration",
+            "src": "1251:51:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_POINT_SYMBOL_BS",
+            "nameLocation": "1277:20:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51830,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1251:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 51831,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1300:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51835,
+            "nodeType": "VariableDeclaration",
+            "src": "1306:58:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DEFAULT_DATA_POINT_VALUE_BS",
+            "nameLocation": "1332:27:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51833,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1306:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3332",
+              "id": 51834,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1362:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_32_by_1",
+                "typeString": "int_const 32"
+              },
+              "value": "32"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51838,
+            "nodeType": "VariableDeclaration",
+            "src": "1368:60:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "UNSIGNED_METADATA_BYTE_SIZE_BS",
+            "nameLocation": "1394:30:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51836,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1368:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "33",
+              "id": 51837,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1427:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3_by_1",
+                "typeString": "int_const 3"
+              },
+              "value": "3"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51841,
+            "nodeType": "VariableDeclaration",
+            "src": "1432:48:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "REDSTONE_MARKER_BS",
+            "nameLocation": "1458:18:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51839,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1432:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "39",
+              "id": 51840,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1479:1:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_9_by_1",
+                "typeString": "int_const 9"
+              },
+              "value": "9"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51844,
+            "nodeType": "VariableDeclaration",
+            "src": "1521:115:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "REDSTONE_MARKER_MASK",
+            "nameLocation": "1547:20:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51842,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1521:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "307830303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303032656435373031316530303030",
+              "id": 51843,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1570:66:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_823907890102272_by_1",
+                "typeString": "int_const 823907890102272"
+              },
+              "value": "0x0000000000000000000000000000000000000000000000000002ed57011e0000"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51847,
+            "nodeType": "VariableDeclaration",
+            "src": "1679:95:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "TIMESTAMP_NEGATIVE_OFFSET_IN_DATA_PACKAGE_WITH_STANDARD_SLOT_BS",
+            "nameLocation": "1705:63:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51845,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1679:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "313034",
+              "id": 51846,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1771:3:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_104_by_1",
+                "typeString": "int_const 104"
+              },
+              "value": "104"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51850,
+            "nodeType": "VariableDeclaration",
+            "src": "1862:66:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_PACKAGE_WITHOUT_DATA_POINTS_BS",
+            "nameLocation": "1888:35:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51848,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1862:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3738",
+              "id": 51849,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1926:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_78_by_1",
+                "typeString": "int_const 78"
+              },
+              "value": "78"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51853,
+            "nodeType": "VariableDeclaration",
+            "src": "2012:74:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "DATA_PACKAGE_WITHOUT_DATA_POINTS_AND_SIG_BS",
+            "nameLocation": "2038:43:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51851,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2012:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3133",
+              "id": 51852,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "2084:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_13_by_1",
+                "typeString": "int_const 13"
+              },
+              "value": "13"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51856,
+            "nodeType": "VariableDeclaration",
+            "src": "2161:71:25",
+            "nodes": [],
+            "constant": true,
+            "mutability": "constant",
+            "name": "REDSTONE_MARKER_BS_PLUS_STANDARD_SLOT_BS",
+            "nameLocation": "2187:40:25",
+            "scope": 51879,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51854,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2161:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3431",
+              "id": 51855,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "2230:2:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_41_by_1",
+                "typeString": "int_const 41"
+              },
+              "value": "41"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51858,
+            "nodeType": "ErrorDefinition",
+            "src": "2298:32:25",
+            "nodes": [],
+            "errorSelector": "5796f78a",
+            "name": "CalldataOverOrUnderFlow",
+            "nameLocation": "2304:23:25",
+            "parameters": {
+              "id": 51857,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2327:2:25"
+            }
+          },
+          {
+            "id": 51860,
+            "nodeType": "ErrorDefinition",
+            "src": "2333:38:25",
+            "nodes": [],
+            "errorSelector": "c30a7bd7",
+            "name": "IncorrectUnsignedMetadataSize",
+            "nameLocation": "2339:29:25",
+            "parameters": {
+              "id": 51859,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2368:2:25"
+            }
+          },
+          {
+            "id": 51866,
+            "nodeType": "ErrorDefinition",
+            "src": "2374:100:25",
+            "nodes": [],
+            "errorSelector": "2b13aef5",
+            "name": "InsufficientNumberOfUniqueSigners",
+            "nameLocation": "2380:33:25",
+            "parameters": {
+              "id": 51865,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51862,
+                  "mutability": "mutable",
+                  "name": "receivedSignersCount",
+                  "nameLocation": "2422:20:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51866,
+                  "src": "2414:28:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51861,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2414:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51864,
+                  "mutability": "mutable",
+                  "name": "requiredSignersCount",
+                  "nameLocation": "2452:20:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51866,
+                  "src": "2444:28:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51863,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2444:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2413:60:25"
+            }
+          },
+          {
+            "id": 51868,
+            "nodeType": "ErrorDefinition",
+            "src": "2477:42:25",
+            "nodes": [],
+            "errorSelector": "ece458ec",
+            "name": "EachSignerMustProvideTheSameValue",
+            "nameLocation": "2483:33:25",
+            "parameters": {
+              "id": 51867,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2516:2:25"
+            }
+          },
+          {
+            "id": 51870,
+            "nodeType": "ErrorDefinition",
+            "src": "2522:33:25",
+            "nodes": [],
+            "errorSelector": "6c2325dc",
+            "name": "EmptyCalldataPointersArr",
+            "nameLocation": "2528:24:25",
+            "parameters": {
+              "id": 51869,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2552:2:25"
+            }
+          },
+          {
+            "id": 51872,
+            "nodeType": "ErrorDefinition",
+            "src": "2558:31:25",
+            "nodes": [],
+            "errorSelector": "b0e86e51",
+            "name": "InvalidCalldataPointer",
+            "nameLocation": "2564:22:25",
+            "parameters": {
+              "id": 51871,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2586:2:25"
+            }
+          },
+          {
+            "id": 51874,
+            "nodeType": "ErrorDefinition",
+            "src": "2592:37:25",
+            "nodes": [],
+            "errorSelector": "e7764c9e",
+            "name": "CalldataMustHaveValidPayload",
+            "nameLocation": "2598:28:25",
+            "parameters": {
+              "id": 51873,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2626:2:25"
+            }
+          },
+          {
+            "id": 51878,
+            "nodeType": "ErrorDefinition",
+            "src": "2632:50:25",
+            "nodes": [],
+            "errorSelector": "ec459bc0",
+            "name": "SignerNotAuthorised",
+            "nameLocation": "2638:19:25",
+            "parameters": {
+              "id": 51877,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51876,
+                  "mutability": "mutable",
+                  "name": "receivedSigner",
+                  "nameLocation": "2666:14:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51878,
+                  "src": "2658:22:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51875,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2658:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2657:24:25"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RedstoneConstants",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 51796,
+          "nodeType": "StructuredDocumentation",
+          "src": "63:245:25",
+          "text": " @title The base contract with helpful constants\n @author The Redstone Oracles team\n @dev It mainly contains redstone-related values, which improve readability\n of other contracts (e.g. CalldataExtractor and RedstoneConsumerBase)"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          51879
+        ],
+        "name": "RedstoneConstants",
+        "nameLocation": "318:17:25",
+        "scope": 51880,
+        "usedErrors": [
+          51858,
+          51860,
+          51866,
+          51868,
+          51870,
+          51872,
+          51874,
+          51878
+        ]
+      }
+    ],
+    "license": "BUSL-1.1"
+  },
+  "id": 25
+}
