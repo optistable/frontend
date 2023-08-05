@@ -1,19 +1,51 @@
-import {Box, Grid, Stack, Typography} from "@mui/material";
+import {Box, Card, Container, Grid, Stack, Typography} from "@mui/material";
 import React from "react";
-import Logo from "./assets/icons/logo.svg";
+import {OPTIMISM_RED} from "./App";
 
+const TitleCard: React.FC = () => (<Container>
+
+</Container>)
 export const Home: React.FC = () => {
 
-    return (<Stack spacing={2} marginTop={2}>
-        <Box
-            sx={{width: "100%", display: "flex", alignItems: "center", flexDirection: "column"}}>
-            <Logo style={{maxHeight: 150}}/>
-        </Box>
-        <Typography variant={"h4"}>Browse</Typography>
+    return (<>
+        <Stack marginTop={2}>
+            <Box display={"flex"} justifyContent={"center"}>
+                <Typography variant={"h3"} sx={{color: OPTIMISM_RED}} textTransform={"uppercase"}>
+                    OP
+                </Typography>
+                <Typography variant={"h3"} textTransform={"uppercase"}>
+                    TISTABLE
+                </Typography>
+            </Box>
+            <Box display={"flex"} justifyContent={"center"} textTransform={"uppercase"}>
+                <Typography variant={"h6"}>PROTECT YOUR STABLECOINS</Typography>
+            </Box>
+        </Stack>
+
+
         <Grid container spacing={2}>
-            <Grid item xs={12}>
+            <Grid item container justifyContent={"center"} xs={12} spacing={8}>
+                <Grid item xs={6} md={4}>
+                    <Card>
+                        <Stack display={"flex"} justifyItems={"center"} spacing={1}>
+                            <Typography variant={"h6"} textAlign={"center"} textTransform={"uppercase"}>
+                                TOTAL INSURED
+                            </Typography>
+                            <Container sx={{height: 48}}>
+                                <Container sx={{backgroundColor: "red", height: "100%"}}>
+
+                                </Container>
+                            </Container>s
+                        </Stack>
+                    </Card>
+                </Grid>
+                <Grid item xs={6} md={4}>
+                    <Card>
+                        Something
+                    </Card>
+                </Grid>
 
             </Grid>
         </Grid>
-    </Stack>)
+    </>)
 }
