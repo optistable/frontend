@@ -1,22 +1,14 @@
 /*
 The Sell page is where you can register a new Chainlink Functions based integration
  */
-import React, {useContext} from "react";
+import React, {FC, SVGProps, useContext} from "react";
 import {Box, Button, MenuItem, Paper, Select, Stack, SvgIcon, TextField, Typography} from "@mui/material";
 import {useForm} from "react-hook-form";
-import BUSDIcon from "./assets/icons/busd.svg";
-import GUSDIcon from "./assets/icons/gemini-usd.svg";
-import USDPIcon from "./assets/icons/paxos-usdp.svg";
-import SEURIcon from "./assets/icons/stasis-euro.svg";
-import TUSDIcon from "./assets/icons/trueusd.svg";
-import USDDIcon from "./assets/icons/usdd-logo.svg";
-import USDTIcon from "./assets/icons/usdt.svg";
-import USDCIcon from "./assets/icons/usdc.svg";
 import {BigNumberish, ethers} from "ethers";
 import {toast} from "react-toastify";
 import PublishIcon from '@mui/icons-material/Publish';
 import {PolicyManagerContext} from "./PolicyManagerProvider";
-import SVG from "*.svg";
+import {stablecoins} from "./App";
 
 type FormValues = {
     insuredToken: ethers.AddressLike,
@@ -32,7 +24,7 @@ type FormValues = {
     // policyStatus: 0 | 1 | 2 | 3 //TODO Convert to enum
 }
 
-const TokenMenuItem: React.FC<{ key: number, address: string, symbol: string, icon: typeof SVG }> = ({
+const TokenMenuItem: React.FC<{ key: number, address: string, symbol: string, icon: FC<SVGProps<SVGSVGElement>> }> = ({
                                                                                                          key,
                                                                                                          address,
                                                                                                          symbol,
@@ -46,16 +38,6 @@ const TokenMenuItem: React.FC<{ key: number, address: string, symbol: string, ic
         </Box>
     </MenuItem>)
 
-const stablecoins = [
-    {address: "0x00000", symbol: "USDC", name: "US Dollar Coin", icon: USDCIcon},
-    {address: "0x00000", symbol: "USDT", name: "Tether USD", icon: USDTIcon},
-    {address: "0x00000", symbol: "GUSD", name: "Gemini USD", icon: GUSDIcon},
-    {address: "0x00000", symbol: "USDP", name: "Paxos USD", icon: USDPIcon},
-    {address: "0x00000", symbol: "TUSD", name: "True USD", icon: TUSDIcon},
-    {address: "0x00000", symbol: "USDD", name: "Decentralized USD", icon: USDDIcon},
-    {address: "0x00000", symbol: "BUSD", name: "Binance USD", icon: BUSDIcon},
-    {address: "0x00000", symbol: "SEUR", name: "Statis EUR", icon: SEURIcon},
-]
 
 export const CreatePolicy: React.FC = () => {
     const {
@@ -157,8 +139,8 @@ export const CreatePolicy: React.FC = () => {
                                 defaultValue={0}
                                 {...register("insuredToken")}
                                 error={!!errors.insuredToken}>
-                            {stablecoins.map((e, i) => (
-                                <TokenMenuItem key={i} address={e.address} icon={e.icon} symbol={e.symbol}/>
+                            {Object.values(stablecoins).map((e, i) => (<></>
+                                // <TokenMenuItem key={i} address={e.address} icon={e.icon} symbol={e.symbol}/>
                             ))}
                         </Select>
                         <Select label={"Collateral token"}
@@ -166,8 +148,8 @@ export const CreatePolicy: React.FC = () => {
                                 defaultValue={0}
                                 {...register("insurerToken")}
                                 error={!!errors.insuredToken}>
-                            {stablecoins.map((e, i) => (
-                                <TokenMenuItem key={i} address={e.address} icon={e.icon} symbol={e.symbol}/>
+                            {Object.values(stablecoins).map((e, i) => (<></>
+                                // <TokenMenuItem key={i} address={e.address} icon={e.icon} symbol={e.symbol}/>
                             ))}
                         </Select>
                         {/*TODO add an inline USDC estimate to the right*/}
